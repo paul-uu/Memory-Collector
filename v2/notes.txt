@@ -1,18 +1,71 @@
 
 TODOS:
 
-Implement location field for memories 
+MISC.
+-----
+• What are we doing with Core Memories?
+
+
+MISC. UI 
+--------
+
+• Implement location field for memories 
+  - request user geolocation?
+  - allow free form?
+  - select from map/location api lookup?
+    -> new view 
+  - ** need to find open source service **
+
+• Update font awesome usage to npm 
+
+• Animation on memory creation
+  'ball' drops from top of window and rolls into next empty spot 
+  -> https://brm.io/matter-js/demo/#circleStack
+
+• replace sort/filter dropdowns with react-select
+
+• Refactor modals -> 1 container modal + children?
+  - props: 
+
+• 'Add Memory' modal 
+  - show small radial chart for emotions to the right of 'title/description'
+  - on emotion change, update chart
+
+• 'Add Memory' modal
+  - add ability to associate image/video/audio with memories 
+    -> links (3rd party)
+    -> after backend is created, file upload?
+
+DATA VISUALIZATIONS
+-------------------
+
+• Geographic Map -> emotions and location 
+  - what data required to show on map 
+
+• Create data visualization using global emotions data 
+  - graphs -> emotions over time 
+    x: time
+    y: emotion number value 
+    dots (per emotion), not line graph 
 
 Compile all memory data
 - date/time 
 - emotions
 - location tbd
 
-Create data visualization using global emotions data 
-- graphs -> emotions over time 
-- map -> emotions and location 
 
-Animation on memory creation
-- 'ball' drops from top of window and rolls into next empty spot 
+BACKEND 
+-------
+• create user auth 
+  -> firebase?
+  -> email/gmail login?
 
-Create a backend, storage, user authentication, etc.
+• persistence 
+  -> firebase?
+
+
+CHORES
+------
+• find free/open source map + location data service 
+  - Google Maps?
+  - mapbox?
